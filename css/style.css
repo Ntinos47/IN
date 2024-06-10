@@ -118,11 +118,14 @@ html {
     z-index: 1;
 }
 .mouse-icon img {
-    background-color: rgba(0, 255, 42, 0.147);
+    background-color: rgba(0, 255, 42, 0.224);
     border-radius: 40px;
     max-width: 80px;
     height: auto;
     cursor: pointer;
+}
+.mouse-icon img:hover {
+    background-color: rgba(0, 255, 42, 0.467);
 }
 
 .wrap-img-footer {
@@ -176,6 +179,27 @@ html {
     display: flex;
     justify-content: space-between;
 }
+
+
+.text1, .text2 {
+    max-width: 300px;
+    font-family: "Manrope";
+    letter-spacing: 0.2cap;
+    text-align: center;
+    font-size: 30px;
+}
+.switch_mob {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    padding-top: 30px;
+}
+.button {
+    height: 150px;
+    width: 100px;
+}
+
+
 @media (max-width: 1100px) {
     .wrap-content2 {
         width: 800px;
@@ -184,7 +208,6 @@ html {
         font-size: 25px;
     }
     .switch_mob {
-        padding-left: 10px;
         height: auto;
         width: 80px;
     }
@@ -207,7 +230,6 @@ html {
         font-size: 23px;
     }
     .switch_mob {
-        padding-right: 200px;
         height: auto;
         width: 70px;
     }
