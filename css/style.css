@@ -175,9 +175,8 @@ html {
 
 .wrap-content2 {
     display: flex;
-    width: 1100px;
-    display: flex;
     justify-content: space-between;
+    width: 1100px;
 }
 
 
@@ -192,7 +191,7 @@ html {
     width: 100%;
     max-width: 100px;
     height: auto;
-    padding-top: 30px;
+    padding-top: 50%;
 }
 .button {
     height: 150px;
