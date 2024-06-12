@@ -170,13 +170,13 @@ html {
         max-width: 250px;
     }
 }
-/********************************************/
-
+/********************************************************/
 
 .wrap-content2 {
     display: flex;
     justify-content: space-between;
     width: 1100px;
+    padding-top: 10vh;
 }
 
 
@@ -231,6 +231,7 @@ html {
     .switch_mob {
         height: auto;
         width: 70px;
+        margin-right: 6px;
     }
     .switch_mob2 {
         height: auto;
@@ -249,5 +250,163 @@ html {
     }
     .text1, .text2 {
         font-size: 20px;
+    }
+}
+/********************************************************/
+
+.container-1 {
+    max-height: 100vh;
+    position: absolute;
+    margin-top: -25vh;
+    width: 1920px;
+    display: flex;
+}
+
+.column-1 {
+    width: 34%;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.column-2 {
+    max-width: 48%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(212, 212, 212);
+}
+
+.column-3 {
+    width: 18%;
+    background-color:  rgb(195, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.wrap-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+}
+.img4{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.img4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrap-video {
+    top: -90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.video {
+    height: auto;
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+}
+
+.wrap-map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #e5e5e5;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap-logo3 {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.logo3 {
+    padding-top: 5vh;
+}
+.wrap-logo3 img {
+    max-width: 70px;
+    height: auto;
+}
+.wrap-content-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.text3 {
+    max-width: 250px;
+    font-family: "Manrope";
+    letter-spacing: 0.2cap;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 200;
+    color: white;
+}
+.text4 {
+    max-width: 300px;
+    font-family: "Manrope";
+    letter-spacing: 0.2cap;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+.switch_mob2 {
+    position: absolute;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    top: 50vh;
+    left: 76%;
+    transform: translate(65%);
+    transition: all 0.6s ease-in-out;
+}
+/* CSS for fade effect */
+.content-wrapper {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    .container-1 {
+        flex-direction: column;
+    }
+    .column-1 {
+        width: 100%;
+        max-height: 32vh;
+    }
+    .wrap-video {
+        top:-100%
+    }
+    .video {
+        height: auto;
+        max-width: 200px;
+        width: 100%;    
+        padding: 20px;
+    }    
+    
+    
+    .column-2 {
+        width: 100%;
+        max-height: 38vh;
+    }
+    .column-3 {
+        width: 100%;
+        max-height: 30vh;
     }
 }

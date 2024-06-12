@@ -2,32 +2,22 @@ document.getElementById('mouse').addEventListener('click', function() {
     changeContent();
 });
 
-
-function changeContent() {
-
-    var text = document.getElementById('text');
-    var re = document.getElementById('Replace1');
-
-    var temp = text.innerHTML;
-    text.innerHTML = re.innerHTML;
-    re.innerHTML = temp;
-    console.log(1);
-}
-
-;
 document.getElementById('text1').addEventListener('click', function() {
-    changeContent1();
+    changeToReplace3();
 });
 
-
-function changeContent1() {
-
+function changeContent() {
     var text = document.getElementById('text');
-    var re = document.getElementById('Replace2');
+    var re = document.getElementById('Replace1');
+    text.style.display = 'none';
+    re.style.display = 'block';
+    console.log('Content changed');
+}
 
-    var temp = text.innerHTML;
-    text.innerHTML = re.innerHTML;
-    re.innerHTML = temp;
-    console.log(2);
-
+function changeToReplace3() {
+    var replace1 = document.getElementById('Replace1');
+    var replace3 = document.getElementById('Replace3');
+    replace1.style.display = 'none';
+    replace3.style.display = 'block';
+    console.log('Content changed to Replace3');
 }
