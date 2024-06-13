@@ -42,10 +42,10 @@ var count = 1;
 document.getElementById('switch2').addEventListener('click', function() {
     if (count == 1) {        
         col1.style.width = '24%';
-        col1.style.backgroundColor = 'rgb(195, 0, 0)';
         col2.style.width = '76%';
         col3.style.width = '0';
-
+        col1.style.backgroundColor = 'rgb(195, 0, 0)';
+        
         switch2.style.right = '75%';
         switch2.style.transform = 'translate(35%)';
     
