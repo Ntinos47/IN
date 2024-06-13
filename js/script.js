@@ -48,7 +48,10 @@ document.getElementById('switch2').addEventListener('click', function() {
 
         switch2.style.right = '75%';
         switch2.style.transform = 'translate(35%)';
-
+    
+    
+        var w = window.innerWidth;
+        mobile(w)
 
         count = 2;
         toggleContent1(count);
@@ -61,6 +64,9 @@ document.getElementById('switch2').addEventListener('click', function() {
 
         switch2.style.right = '17%';
         switch2.style.transform = 'translate(33%)';
+
+        var w = window.innerWidth;
+        mobile(w)
 
         count = 1;
         toggleContent1(count);
@@ -100,5 +106,35 @@ function toggleContent1(count) {
         Div1.innerHTML = temp1;
         Div2.innerHTML = temp2;
         Div3.innerHTML = temp3;
+    }
+}
+
+function mobile(w) {
+    
+    var con = document.getElementById('container-1');
+    var vid = document.getElementById('wrap-video');
+
+    if (w < '1400') {
+        switch2.style.right = '18%';
+        switch2.style.transform = 'translate(50%)';
+    }
+    if (w < '1100') {
+        switch2.style.height = 'auto';
+        switch2.style.width = '80px';
+    }
+    if (w < '800') {
+        con.style.flexDirection = 'column';
+
+        col1.style.width = '100%';
+        col1.style.maxHeight = '32vh';
+
+        vid.style.top = '100%';
+        vid.style.maxWidth = '160px';
+        vid.style.marginLeft = 'auto';
+        vid.style.marginRight = 'auto';
+        vid.style.marginTop = 'auto';
+        vid.style.marginBottom = 'auto';
+
+
     }
 }
