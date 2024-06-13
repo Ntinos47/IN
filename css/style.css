@@ -250,6 +250,7 @@ html {
 /********************************************************/
 
 .container-1 {
+    width: 100%;
     display: flex;
     margin-top: -25vh;
     height: 100vh;
