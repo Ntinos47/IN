@@ -1,20 +1,27 @@
+var count = 0;
+
 document.getElementById('mouse').addEventListener('click', function() {
     changeContent();
 });
 
 document.getElementById('text1').addEventListener('click', function() {
     changeToReplace3();
+    count = 2;
+});
+document.getElementById('text2').addEventListener('click', function() {
+    changeToReplace4();
+    count = 1   ;
 });
 
 function changeContent() {
     var text = document.getElementById('text');
     var re = document.getElementById('Replace1');
     text.style.display = 'none';
-    re.style.display = 'block';
+    re.style.display = 'flex';
+    re.style.justifyContent = 'center';
     console.log('Content changed');
 }
 
-var counter = 0;
 function changeToReplace3() {
     var replace1 = document.getElementById('Replace1');
     var replace3 = document.getElementById('Replace3');
@@ -31,14 +38,28 @@ function style() {
     content.style.transform = 'translate(0%)';
     content.style.left = '0';
 }
+function changeToReplace4() {
+    var replace1 = document.getElementById('Replace1');
+    var replace3 = document.getElementById('Replace4');
+    replace1.style.display = 'none';
+    replace3.style.display = 'block';
+    console.log('Content changed to Replace4');
+        
+    style()
+}
 
-
+function oneTwo() {
+    if (count == 1) {
+        toggleContent1(count)
+    }else{
+        toggleContent1(count)
+    }
+}
 
 var col1 = document.getElementById('col1');
 var col2 = document.getElementById('col2');
 var col3 = document.getElementById('col3');
 
-var count = 1;
 document.getElementById('switch2').addEventListener('click', function() {
     if (count == 1) {        
         col1.style.width = '24%';
@@ -47,7 +68,7 @@ document.getElementById('switch2').addEventListener('click', function() {
         col1.style.backgroundColor = 'rgb(195, 0, 0)';
         
         switch2.style.right = '75%';
-        switch2.style.transform = 'translate(35%)';
+        switch2.style.transform = 'translate(30%)';
     
     
         var w = window.innerWidth;
@@ -63,7 +84,7 @@ document.getElementById('switch2').addEventListener('click', function() {
         col1.style.backgroundColor = 'transparent';
 
         switch2.style.right = '17%';
-        switch2.style.transform = 'translate(33%)';
+        switch2.style.transform = 'translate(30%)';
 
         var w = window.innerWidth;
         mobile(w)

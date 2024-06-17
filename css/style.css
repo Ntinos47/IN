@@ -151,7 +151,8 @@ html {
         max-width: 70px;
     }
     .inner-img img {
-        max-width: 270px;
+        padding-top: 30px;
+        max-width: 250px;
     }
     }
     @media (max-width: 800px) {
@@ -162,7 +163,8 @@ html {
         max-width: 60px;
     }
     .inner-img img {
-        max-width: 250px;
+        padding-top: 40px;
+        max-width: 220px;
     }
 }
 /********************************************************/
