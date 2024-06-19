@@ -115,7 +115,7 @@ html {
 
 .wrap-img-footer {
     position: absolute;
-    bottom: 10%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -474,7 +474,7 @@ html {
         padding: 20px;
         
         height: auto;
-        width: 100%;
+        width: 85%;
     }    
     .column-2 {
         max-width: 100%;
@@ -489,22 +489,25 @@ html {
         padding-top: 5px;
     }
     .wrap-content-side {
-        padding-top: 20px;
+        padding-top: 0px;
     }
     .text3 {
         width: 100%;
         font-size: 18px;
         font-weight: 500;
+        margin-top: 10px;
     }
     .text4 {
+        font-size: 18px;
         font-weight: 400;
+        margin-top: auto;
     }
     .switch_mob2 {
         height: auto;
         width: 70px;
-        top: 41vh;
+        top: 20vh;
         transform: translateY(3px);
-        right: 10%;
+        right: -9%;
     }
 }
 

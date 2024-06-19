@@ -62,13 +62,13 @@ document.getElementById('switch2').addEventListener('click', function() {
         col3.style.width = '0';
         col1.style.backgroundColor = 'rgb(195, 0, 0)';
             
-        var w = window.innerWidth;
-        mobile(w)
         
         switch2.style.right = '75%';
         switch2.style.transform = 'translate(30%)';
-
-
+        
+        var w = window.innerWidth;
+        mobile(w, count)
+        
         count = 2;
         toggleContent1(count);
         
@@ -78,12 +78,12 @@ document.getElementById('switch2').addEventListener('click', function() {
         col3.style.width = '18%';
         col1.style.backgroundColor = 'transparent';
 
-        var w = window.innerWidth;
-        mobile(w)
-
+        
         switch2.style.right = '17%';
         switch2.style.transform = 'translate(30%)';
-
+        
+        var w = window.innerWidth;
+        mobile(w, count)
 
         count = 1;
         toggleContent1(count);
@@ -142,12 +142,12 @@ document.getElementById('switch3').addEventListener('click', function() {
         col3_2.style.width = '18%';
         col3_2.style.backgroundColor = 'rgb(195, 0, 0)';
     
-        var w = window.innerWidth;
-        mobile(w)
         switch3.style.right = '17%';
         switch3.style.transform = 'translate(30%)';    
 
-
+        
+        var w = window.innerWidth;
+        mobile(w)
 
         counter = 2;
         toggleContent(counter);
@@ -159,12 +159,12 @@ document.getElementById('switch3').addEventListener('click', function() {
         col3_2.style.width = '0';
         col3_2.style.backgroundColor = 'transparent';
        
-        var w = window.innerWidth;
-        mobile(w)
-
+        
         switch3.style.right = '75%';
         switch3.style.transform = 'translate(30%)';
-
+        
+        var w = window.innerWidth;
+        mobile(w)
 
         counter = 1;
         toggleContent(counter);
@@ -243,7 +243,7 @@ function fadeOutText() {
 
 
 
-function mobile(w) {
+function mobile(w, count) {
     
     var con = document.getElementById('container-1');
     var wr_vid = document.getElementById('wrap-video');
@@ -252,15 +252,31 @@ function mobile(w) {
     var con = document.getElementById('con-slide');
     var t3 = document.getElementById('text3');
     var t4 = document.getElementById('text4');
+    var t3_2 = document.getElementById('text3-2');
+    var t4_2 = document.getElementById('text4-2');
 
 
 
     if (w < '800') {
+
+
+        if (count == 2) {
+            col1.style.maxHeight = '32vh';
+            col2.style.maxHeight = '38vh';
+            col3.style.height = '30vh';
+            switch2.style.right = '-3%';
+        }else{
+            col1.style.maxHeight = '50vh';
+            col2.style.maxHeight = '50vh';
+            col3.style.height = '0vh';
+            switch2.style.right = '96%';
+
+        }
+        
         con.style.flexDirection = 'column';
-
+        
         col1.style.width = '100%';
-        col1.style.maxHeight = '32vh';
-
+        
         wr_vid.style.top = '100%';
         wr_vid.style.maxWidth = '160px';
         wr_vid.style.marginLeft = 'auto';
@@ -272,24 +288,25 @@ function mobile(w) {
         vid.style.padding = '20px';
         vid.style.height = 'auto';
         vid.style.width = '100%';
-
+        
         col2.style.maxWidth = '100%';
         col2.style.width = '100%';
-        col2.style.maxHeight = '38vh';
-
+        
         col3.style.width = '100%';
-        col3.style.height = '30vh';
-
+        
         logo.style.paddingTop = '5px';
-
-        con.style.paddingTop = '20px';
-
+        
+        con.style.paddingTop = '0px';
+        
         t3.style.width = '100%';
         t3.style.fontSize = '18px';
         t3.style.fontWeight = '500';
-
+        
+        t3_2.style.paddingTop = '15px';
+        t3_2.style.fontSize = '22px';
+        
         t4.style.fontWeight = '400';
-
+        
         switch2.style.height = 'auto';
         switch2.style.width = '70px';
     }
