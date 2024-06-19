@@ -469,9 +469,6 @@ html {
         margin-top: auto;
         margin-bottom: auto;
     }
-    .img4 {
-        min-height: 270px;
-    }
     .video {
         max-width: 200px;
         padding: 20px;
@@ -491,6 +488,9 @@ html {
     .logo3 {
         padding-top: 5px;
     }
+    .wrap-content-side {
+        padding-top: 20px;
+    }
     .text3 {
         width: 100%;
         font-size: 18px;
@@ -498,11 +498,13 @@ html {
     }
     .text4 {
         font-weight: 400;
-        margin-bottom: 30px;
     }
     .switch_mob2 {
         height: auto;
         width: 70px;
+        top: 41vh;
+        transform: translateY(3px);
+        right: 10%;
     }
 }
 
