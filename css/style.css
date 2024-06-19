@@ -115,7 +115,7 @@ html {
 
 .wrap-img-footer {
     position: absolute;
-    top: 85vh;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -232,8 +232,8 @@ html {
         max-width: 60px;
     }
     .inner-img img {
-        padding-top: 40px;
-        max-width: 220px;
+        padding-top: 0px;
+        max-width: 200px;
     }
 }
 /********************************************************/
