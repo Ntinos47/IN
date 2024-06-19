@@ -37,17 +37,6 @@ html {
     z-index: 2;
     background-color: rgb(215, 212, 204);
 }
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
 
 .img1, .img2 {
     width: 50%;
@@ -141,6 +130,86 @@ html {
     height: 100%;
     display: flex;
     z-index: 0;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeOutText {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOutText {
+    animation-name: fadeOutText;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
 }
 
 @media (max-width: 1100px) {
@@ -439,15 +508,21 @@ html {
 
 /********************************************************/
 
-.colReplace1 {
+.col1-2 {
     width: 24%;
     height: 100vh;
     background-color:  rgb(195, 0, 0);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.colReplace2 {
+.col2-2 {
     width: 76%;
     height: 100vh;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.col3-2 {
+    width: 0%;
+    background-color: transparent;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .switch_mob3 {
@@ -458,5 +533,5 @@ html {
     top: 25vh;
     right: 75%;
     transform: translate(30%);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
