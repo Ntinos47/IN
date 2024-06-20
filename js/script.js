@@ -147,8 +147,9 @@ document.getElementById('switch3').addEventListener('click', function() {
 
         
         var w = window.innerWidth;
-        mobile(w)
+        mobiles(w, counter);
 
+        
         counter = 2;
         toggleContent(counter);
         
@@ -164,7 +165,7 @@ document.getElementById('switch3').addEventListener('click', function() {
         switch3.style.transform = 'translate(30%)';
         
         var w = window.innerWidth;
-        mobile(w)
+        mobiles(w, counter);
 
         counter = 1;
         toggleContent(counter);
@@ -209,7 +210,11 @@ function toggleContent(count) {
 
 
 
-// script.js
+function fadeOut() {
+    var element = document.getElementById('wrap-text');
+    element.classList.add('fadeOut');
+    setTimeout(delayedFunction, 500);
+}
 function delayedFunction() {
     var element = document.getElementById('wrap-text');
     element.classList.add('fadeIn');
@@ -220,12 +225,6 @@ function delayedFunction() {
     var element2 = document.getElementById('text1');
     element2.classList.add('fadeInUp');
 }
-function fadeOut() {
-    var element = document.getElementById('wrap-text');
-    element.classList.add('fadeOut');
-    setTimeout(delayedFunction, 500);
-}
-
 function fadeOutText() {
     var element1 = document.getElementById('text2');
     element1.classList.add('fadeOutText');
@@ -239,10 +238,6 @@ function fadeOutText() {
 
 
 
-
-
-
-
 function mobile(w, count) {
     
     var con = document.getElementById('container-1');
@@ -250,11 +245,10 @@ function mobile(w, count) {
     var vid = document.getElementById('video');
     var logo = document.getElementById('logo3');
     var con = document.getElementById('con-slide');
-    var t3 = document.getElementById('text3');
-    var t4 = document.getElementById('text4');
-    var t3_2 = document.getElementById('text3-2');
-    var t4_2 = document.getElementById('text4-2');
-
+    var t3 = document.getElementById('text3-3');
+    var t4 = document.getElementById('text4-3');
+    var t3_2 = document.getElementById('text3-5');
+    var t4_2 = document.getElementById('text4-6');
 
 
     if (w < '800') {
@@ -265,12 +259,14 @@ function mobile(w, count) {
             col2.style.maxHeight = '38vh';
             col3.style.height = '30vh';
             switch2.style.right = '-3%';
+            logo.style.paddingTop = '5px';
         }else{
             col1.style.maxHeight = '50vh';
             col2.style.maxHeight = '50vh';
             col3.style.height = '0vh';
-            switch2.style.right = '96%';
-
+            switch2.style.right = '91%';
+            switch2.style.transform = 'translateY(17%)';
+            logo.style.paddingTop = '33px';
         }
         
         con.style.flexDirection = 'column';
@@ -294,9 +290,8 @@ function mobile(w, count) {
         
         col3.style.width = '100%';
         
-        logo.style.paddingTop = '5px';
         
-        con.style.paddingTop = '0px';
+        con.style.paddingTop = '30px';
         
         t3.style.width = '100%';
         t3.style.fontSize = '18px';
@@ -307,7 +302,76 @@ function mobile(w, count) {
         
         t4.style.fontWeight = '400';
         
-        switch2.style.height = 'auto';
         switch2.style.width = '70px';
+        switch2.style.height = 'auto';
     }
 }
+
+
+function mobiles(w, count) {
+        
+    var con = document.getElementById('container-1');
+    var wr_vid = document.getElementById('wrap-video');
+    var vid = document.getElementById('video');
+    var logo = document.getElementById('logo3');
+    var con = document.getElementById('con-slide');
+    var t3 = document.getElementById('text3');
+    var t4 = document.getElementById('text4');
+    var t3_2 = document.getElementById('text3-2');
+    var t4_2 = document.getElementById('text4-2');
+
+
+    if (w < '800') {
+
+
+        if (count == 2) {
+            col1_2.style.maxHeight = '50vh';
+            col2_2.style.maxHeight = '50vh';
+            col3_2.style.height = '0vh';
+            switch3.style.right = '-8%';
+            switch3.style.transform = 'translateY(17%)';
+            logo.style.paddingTop = '33px';
+        }else{
+            col1_2.style.maxHeight = '32vh';
+            col2_2.style.maxHeight = '38vh';
+            col3_2.style.height = '30vh';
+            switch3.style.right = '96%';
+            logo.style.paddingTop = '5px';
+        }
+        
+        con.style.flexDirection = 'column';
+        
+        col1_2.style.width = '100%';
+        
+        wr_vid.style.top = '100%';
+        wr_vid.style.maxWidth = '160px';
+        wr_vid.style.marginLeft = 'auto';
+        wr_vid.style.marginRight = 'auto';
+        wr_vid.style.marginTop = 'auto';
+        wr_vid.style.marginBottom = 'auto';
+        
+        vid.style.maxWidth = '200px';
+        vid.style.padding = '20px';
+        vid.style.height = 'auto';
+        
+        col2_2.style.maxWidth = '100%';
+        col2_2.style.width = '100%';
+        
+        col3_2.style.width = '100%';
+        
+        
+        con.style.paddingTop = '30px';
+        
+        t3.style.width = '100%';
+        t3.style.fontSize = '18px';
+        t3.style.fontWeight = '500';
+        
+        t3_2.style.paddingTop = '15px';
+        t3_2.style.fontSize = '22px';
+        
+        t4.style.fontWeight = '400';
+        
+        switch3.style.width = '70px';
+        switch3.style.height = 'auto';
+    };
+};
