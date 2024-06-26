@@ -337,13 +337,13 @@ html {
     width: 34%;
     height: 100%;
     position: relative;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .column-2 {
     width: 48%;
     height: 100%;
     position: relative;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgb(212, 212, 212);
 }
 
@@ -867,13 +867,31 @@ html {
 
 
 .side-bar {
-    height: 100vh;
-    background-color: rgb(219, 213, 202);
+    width: 34%;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.wrap-rec-rep {
+    height: 50vh;
+}
+.rec-rep {
+    width: 100%;
+    height: 50vh;
+}
+.wrap-text-re {
+    padding: 60px;
+    height: 50vh;
+    background-color: rgb(222, 214, 197);    
+}
 .header-sidebar {
+    margin: 0;
     font-family: 'Manrope';
-    font-size: 35px;
+    font-size: 23px;
     font-weight: 300;
     color: red;
+}
+.map-content {
+    color: black;
+    font-size: 15px;
 }

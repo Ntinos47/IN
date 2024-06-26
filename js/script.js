@@ -382,5 +382,11 @@ function mobiles(w, count) {
 
 var sideCount = 1;
 document.getElementById('mapPointer').addEventListener('click', function() {
-    console.log('Done');
+    var Div1 = document.getElementById("col1");
+    var newDiv1 = document.getElementById("mapReplace");
+    var temp1 = Div1.innerHTML;
+
+    Div1.innerHTML = newDiv1.innerHTML;
+
+    newDiv1.innerHTML = temp1;
 });
