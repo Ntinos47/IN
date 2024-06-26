@@ -244,6 +244,7 @@ function mobile(w, count) {
     var wr_vid = document.getElementById('wrap-video');
     var vid = document.getElementById('video');
     var logo = document.getElementById('logo3');
+    var wcs= document.getElementById('wrap-content-side');
     var con = document.getElementById('con-slide');
     var t3 = document.getElementById('text3-3');
     var t4 = document.getElementById('text4-3');
@@ -259,7 +260,7 @@ function mobile(w, count) {
             col2.style.maxHeight = '38vh';
             col3.style.height = '30vh';
             switch2.style.right = '-3%';
-            logo.style.paddingTop = '5px';
+            logo.style.paddingTop = '10px';
         }else{
             col1.style.maxHeight = '50vh';
             col2.style.maxHeight = '50vh';
@@ -269,6 +270,8 @@ function mobile(w, count) {
             logo.style.paddingTop = '33px';
         }
         
+        wcs.style.paddingTop = '65px';
+
         con.style.flexDirection = 'column';
         
         col1.style.width = '100%';
@@ -375,3 +378,9 @@ function mobiles(w, count) {
         switch3.style.height = 'auto';
     };
 };
+
+
+var sideCount = 1;
+document.getElementById('mapPointer').addEventListener('click', function() {
+    console.log('Done');
+});

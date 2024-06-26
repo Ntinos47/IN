@@ -389,14 +389,16 @@ html {
 }
 .video-overlap {
     background-color: rgba(236, 6, 6, 0.431);
-    margin-top: -154px;
+    margin-top: -141px;
     width: 100%;
-    height: 150px;
+    height: auto;
+    max-height: 150px;
     position: relative;
 }
 .content-above{
     display: flex;
     flex-direction: column;
+    text-align: center;
     margin: 0;
     padding: 0;
     padding: 20px;
@@ -405,7 +407,7 @@ html {
 }
 .vid-con1 {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 24px;
     font-weight: 800;
 }
@@ -491,6 +493,82 @@ html {
         width: 80px;
     }
 }
+@media (max-width: 1077px) {
+    .video-overlap {
+        background-color: rgba(236, 6, 6, 0.431);
+        margin-top: -111px;
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        position: relative;
+    }
+    .vid-con1 {
+        margin-top: 0px;
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 800;
+    }
+    .vid-con2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content-above {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+        padding-left: 15px;
+        font-family: 'Manrope';
+    }
+    
+}
+@media (max-width: 1033px) {
+    .video-overlap {
+        background-color: rgba(236, 6, 6, 0.431);
+        margin-top: -99px;
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        position: relative;
+    }
+    .vid-con1 {
+        margin-top: 0px;
+        margin-bottom: 0;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .vid-con2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .content-above {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+        padding-left: 15px;
+        font-family: 'Manrope';
+    }
+    
+}
+@media (max-width: 1033px) {
+    .video-overlap {
+        margin-top: -99px;
+    }
+}
+@media (max-width: 906px) {
+    .video-overlap {
+        margin-top: -118px;
+    }
+}
+@media (max-width: 875px) {
+    .video-overlap {
+        margin-top: -145px;
+    }
+}
 @media screen and (max-width: 800px) {
     .container-1 {
         flex-direction: column;
@@ -508,12 +586,38 @@ html {
         margin-bottom: auto;
     }
     .video {
-        max-width: 200px;
         padding: 20px;
-        
+        margin-top: 40px;
+    }
+    .vid-con1 {
+        margin-top: 0px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .vid-con2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .video-overlap {
+        background-color: rgba(236, 6, 6, 0.431);
+        margin-top: -128px;
+        width: 100%;
+        max-width: 136px;
+        margin-left: 20px;
         height: auto;
-        width: 85%;
-    }    
+        position: relative;
+    }
+    .content-above {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: 'Manrope';
+    }
     .column-2 {
         max-width: 100%;
         width: 100%;
@@ -524,7 +628,7 @@ html {
         height: 30vh;
     }
     .logo3 {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .wrap-content-side {
         padding-top: 30px;
@@ -645,7 +749,6 @@ html {
     }
     .video {
         max-width: 200px;
-        padding: 20px;
         
         height: auto;
         width: 85%;
@@ -686,5 +789,76 @@ html {
     }
 }
 
-/********************************************************/
+/**************************    MAPS    ******************************/
 
+.pointer1 {
+    transition: all .2s;
+    max-width: 46px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 37.5%;
+    top: 18%;
+}
+.pointer1:hover {
+    transition: all .4s;
+    max-width: 55px;
+    left: 37%;
+    top: 17.6%;
+}
+.pointer2 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 64.5%;
+    top: 14%;
+}
+.pointer3 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 28%;
+    top: 34%;
+}
+.pointer4 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 44.5%;
+    top: 47.5%;
+}
+.pointer5 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top: 52.4%;
+}
+.pointer6 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+.pointer7 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 59.5%;
+    top: 70.5%;
+}
+.pointer8 {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 60.4%;
+    top: 87%;
+}
