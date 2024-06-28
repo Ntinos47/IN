@@ -252,6 +252,7 @@ html {
     letter-spacing: 0.2cap;
     text-align: center;
     font-size: 30px;
+    cursor: pointer;
 }
 .text2 {
     margin-right: 0px;
@@ -422,7 +423,7 @@ html {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: #e5e5e5;
+    background-color: #eeece8;
 }
 .map {
     width: 100%;
@@ -799,6 +800,7 @@ html {
     position: absolute;
     left: 37.5%;
     top: 18%;
+    cursor: pointer;
 }
 .pointer1:hover {
     transition: all .4s;
@@ -865,7 +867,16 @@ html {
 
 /**************************    Side-Bar    ******************************/
 
-
+.close-icon {
+    transition: all .2s;
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 93%;
+    top: 2%;
+    cursor: pointer;
+}
 .side-bar {
     width: 34%;
     height: 100%;
@@ -873,25 +884,41 @@ html {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wrap-rec-rep {
-    height: 50vh;
+    height: 40vh;
 }
 .rec-rep {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 .wrap-text-re {
-    padding: 60px;
+    padding: 65px;
     height: 50vh;
-    background-color: rgb(222, 214, 197);    
+    background-color: rgb(211, 207, 194);    
 }
 .header-sidebar {
     margin: 0;
     font-family: 'Manrope';
-    font-size: 23px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
     color: red;
 }
 .map-content {
     color: black;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Manrope';
+}
+
+.wrap-button {
+    display: flex;
+    align-items: end;
+}
+.btn {
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Manrope';
 }

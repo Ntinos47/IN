@@ -380,13 +380,28 @@ function mobiles(w, count) {
 };
 
 
-var sideCount = 1;
+var sidebarCount = 1;
 document.getElementById('mapPointer').addEventListener('click', function() {
+    if (sidebarCount == 1) {
+        sidebarContent();
+        sidebarCount = sidebarCount+1;
+    }
+});
+
+function sidebarContent() {
     var Div1 = document.getElementById("col1");
     var newDiv1 = document.getElementById("mapReplace");
     var temp1 = Div1.innerHTML;
-
     Div1.innerHTML = newDiv1.innerHTML;
+    newDiv1.innerHTML = temp1;
+}
 
+
+document.getElementById('backIcon').addEventListener('click', function() {
+    console.log('dsfbhsdb');
+    var Div1 = document.getElementById("mapReplace");
+    var newDiv1 = document.getElementById("col1");
+    var temp1 = Div1.innerHTML;
+    Div1.innerHTML = newDiv1.innerHTML;
     newDiv1.innerHTML = temp1;
 });
